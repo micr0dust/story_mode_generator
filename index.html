@@ -52,8 +52,6 @@
             border: 0;
             border-radius: 10px;
             cursor: pointer;
-            height: 32px;
-            width: 32px;
             margin-top: 10px;
         }
 
@@ -493,13 +491,23 @@
         for (var k = 1; k < 16; k++) {
             for (var j = 1; j < 15; j++) {
                 var arrnum = k * 100 + j;
-                color[arrnum] = 0;
+                color[arrnum] = 'url("./block/air.png");';
             }
         }
 
         setInterval((()=>{document.getElementById("nowcolor").style.backgroundImage = col}), 500);
 
         function create() {
+            for (var k = 1; k < 13; k++) {
+                for (var j = 1; j < 13; j++) {
+                    var data = color[k * 100 + j];
+                    data = data.replace(/\"/g, '"');
+                    data = data.replace(/\;/g, '"');
+                    data = data.replace('url("./block/','"');
+                    data = data.replace('.png")','"');
+                    color[k * 100 + j]=data;
+                }
+            }
             for (var k = 1; k < 13; k++) {
                 for (var j = 1; j < 13; j++) {
                     var arrnum = k * 100 + j;
