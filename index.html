@@ -476,6 +476,12 @@
         <button onclick="col = this.style.backgroundImage"
             style='background-image:url("./block/spawner.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/beacon.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blood.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blood_foot_right.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blood_foot_left.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/knife.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/tv.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/bookshelf2.png");'></button>
 
 
         
@@ -501,8 +507,7 @@
             for (var k = 1; k < 13; k++) {
                 for (var j = 1; j < 13; j++) {
                     var data = color[k * 100 + j];
-                    data = data.replace(/\"/g, '"');
-                    data = data.replace(/\;/g, '"');
+                    data = data.replace(/\;/g, '');
                     data = data.replace('url("./block/','"');
                     data = data.replace('.png")','"');
                     color[k * 100 + j]=data;
@@ -512,9 +517,32 @@
                 for (var j = 1; j < 13; j++) {
                     var arrnum = k * 100 + j;
                     var type = color[arrnum];
-                    document.write("blocks[" + arrnum + "]=" + type + ";");
+                    if(type!='"air"'){
+                        document.write("blocks[" + arrnum + "]=" + type + ";");
+                    }
                 }
             }
+            document.write("<br><br>");
+            for (var k = 1; k < 13; k++) {
+                for (var j = 1; j < 13; j++) {
+                    var arrnum = k * 100 + j;
+                    var type = color[arrnum];
+                    if(type!='"air"'){
+                        document.write("layer1[" + arrnum + "]=" + type + ";");
+                    }
+                }
+            }
+            document.write("<br><br>");
+            for (var k = 1; k < 13; k++) {
+                for (var j = 1; j < 13; j++) {
+                    var arrnum = k * 100 + j;
+                    var type = color[arrnum];
+                    if(type!='"air"'){
+                        document.write("layer2[" + arrnum + "]=" + type + ";");
+                    }
+                }
+            }
+            document.write("<br><br>");
         }
     </script>
 </body>
