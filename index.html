@@ -7,25 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="https://www.nei.org/App_Themes/NEIwebsite/Images/favicon.ico" />
     <title>vbfunction</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <style>
         a:link {
             color: darkgrey
         }
-
+        
         a:visited {
             color: black
         }
-
+        
         a:hover {
             color: grey
         }
-
+        
         a {
             text-decoration: none
         }
-
+        
         #xy input {
             border: 0;
             background-image: url("./block/air.png");
@@ -35,11 +34,11 @@
             margin-top: 2px;
             font-size: 1px;
         }
-
+        
         #create {
             margin-left: 300px;
         }
-
+        
         #team button {
             border: 0;
             color: #fff;
@@ -47,30 +46,30 @@
             height: 32px;
             font-size: 1px;
         }
-
+        
         #create input {
             border: 0;
             border-radius: 10px;
             cursor: pointer;
             margin-top: 10px;
         }
-
+        
         #team {
             margin-left: 300px;
         }
-
+        
         #xy button:hover {
             color: #003C9D;
             background-color: rgba(255, 255, 255, 0.651);
             border: 2px #003C9D solid;
         }
-
+        
         #create input:hover {
             color: rgb(71, 28, 173);
             background-color: #fff;
             border: 2px rgb(71, 28, 173) solid;
         }
-
+        
         #xy {
             margin-left: 400px;
         }
@@ -242,249 +241,157 @@
     </div>
     <BR>
     <div id="team">
-            <h3>目前選擇: <button id="nowcolor" style='background-image:url("./block/air.png");'></button></h3>
-            <br>
+        <h3>目前選擇: <button id="nowcolor" style='background-image:url("./block/air.png");'></button></h3>
+        <br>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/air.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/stone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/smooth_stone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/granite.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/polished_granite.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/diorite.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/polished_diorite.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/andesite.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/polished_andesite.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/sandstone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/smooth_sandstone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/chiseled_sandstone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/cut_sandstone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/red_sandstone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/smooth_red_sandstone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/chiseled_red_sandstone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/cut_red_sandstone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/cobblestone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/mossy_cobblestone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/prismarine_bricks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/dark_prismarine.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/netherrack.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/end_stone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/end_stone_bricks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/bedrock.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/smooth_stone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/granite.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/polished_granite.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/diorite.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/polished_diorite.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/andesite.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/polished_andesite.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/sandstone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/smooth_sandstone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/chiseled_sandstone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/cut_sandstone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/red_sandstone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/smooth_red_sandstone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/chiseled_red_sandstone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/cut_red_sandstone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/cobblestone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/mossy_cobblestone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/prismarine_bricks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/dark_prismarine.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/netherrack.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/end_stone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/end_stone_bricks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/bedrock.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/sand.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/gravel.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/soul_sand.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/stone_bricks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/mossy_stone_bricks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/cracked_stone_bricks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/chiseled_stone_bricks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/soul_sand.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/stone_bricks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/mossy_stone_bricks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/cracked_stone_bricks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/chiseled_stone_bricks.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/bricks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/nether_bricks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/nether_bricks.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/dirt.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/coarse_dirt.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/coarse_dirt.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/podzol.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/farmland.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/grass_path.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/mycelium.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/oak_planks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/spruce_planks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/birch_planks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/jungle_planks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/acacia_planks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/dark_oak_planks.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/stripped_oak_log.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/farmland.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/grass_path.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/mycelium.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/oak_planks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/spruce_planks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/birch_planks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/jungle_planks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/acacia_planks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/dark_oak_planks.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/stripped_oak_log.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/ice.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/frosted_ice.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/blue_ice.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/nether_quartz_ore.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/quartz_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/chiseled_quartz_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/magma_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/hay_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/dried_kelp_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/slime_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/redstone_ore.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/redstone_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/gold_ore.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/gold_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/iron_ore.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/iron_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/coal_ore.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/lapis_ore.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/lapis_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/emerald_ore.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/emerald_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/diamond_ore.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/diamond_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/frosted_ice.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blue_ice.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/nether_quartz_ore.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/quartz_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/chiseled_quartz_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/magma_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/hay_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/dried_kelp_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/slime_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/redstone_ore.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/redstone_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/gold_ore.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/gold_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/iron_ore.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/iron_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/coal_ore.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/lapis_ore.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/lapis_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/emerald_ore.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/emerald_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/diamond_ore.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/diamond_block.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/cobweb.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/ladder.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/scaffolding.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/scaffolding.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/tnt.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/jack_o_lantern.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/glowstone.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/sea_lantern.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/bookshelf.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/cauldron.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/jukebox.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/composter.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/jack_o_lantern.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/glowstone.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/sea_lantern.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/bookshelf.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/cauldron.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/jukebox.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/composter.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/barrel.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/barrel_open.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/crafting_table.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/furnace.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/furnace_on.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/brewing_stand.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/enchanting_table.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/barrel_open.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/crafting_table_top.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/furnace.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/furnace_on.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/brewing_stand.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/enchanting_table.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/loom.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/smoker.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/blast_furnace.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/cartography_table.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/fletching_table.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/smithing_table.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/beehive.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/bee_nest.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/honey_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/honeycomb_block.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/white_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/orange_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/magenta_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/light_blue_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/yellow_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/lime_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/pink_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/gray_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/light_gray_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/cyan_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/purple_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/blue_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/brown_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/green_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/red_wool.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/black_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blast_furnace.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/cartography_table.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/fletching_table.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/smithing_table.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/beehive.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/bee_nest.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/honey_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/honeycomb_block.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/white_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/orange_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/magenta_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/light_blue_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/yellow_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/lime_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/pink_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/gray_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/light_gray_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/cyan_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/purple_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blue_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/brown_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/green_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/red_wool.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/black_wool.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/piston.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/redstone_lamp.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/iron_bars.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/spruce_trapdoor.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/acacia_door.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/oak_door.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/iron_door.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/dark_oak_door.png");'></button>
-        <button onclick="col = this.style.backgroundImage"
-            style='background-image:url("./block/spawner.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/redstone_lamp.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/iron_bars.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/spruce_trapdoor.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/acacia_door.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/oak_door.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/iron_door.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/dark_oak_door.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/spawner.png");'></button>
+        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/sugar_cane.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/beacon.png");'></button>
         <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blood.png");'></button>
-        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blood_foot_right.png");'></button>
-        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blood_foot_left.png");'></button>
-        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/knife.png");'></button>
-        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/tv.png");'></button>
-        <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/bookshelf2.png");'></button>
+        <<<<<<< HEAD <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blood_foot_right.png");'>
+            </button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blood_foot_left.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/knife.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/tv.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/bookshelf2.png");'></button> =======
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blood_foot_right.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/blood_foot_left.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/knife.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/tv.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/bookshelf2.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/powered_rail.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/dead_bush.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/wither_rose.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/end_portal_frame_top.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/carved_pumpkin.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/nether_wart_stage3.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/sweet_berry_bush_stage1.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/sweet_berry_bush_stage2.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/sweet_berry_bush_stage3.png");'></button>
+            <button onclick="col = this.style.backgroundImage" style='background-image:url("./block/anvil_top.png");'></button> >>>>>>> c5507357d04a2932403b25960c68d995b117e54c
 
 
-        
     </div>
     <BR>
     <div id="create">
@@ -501,23 +408,25 @@
             }
         }
 
-        setInterval((()=>{document.getElementById("nowcolor").style.backgroundImage = col}), 500);
+        setInterval((() => {
+            document.getElementById("nowcolor").style.backgroundImage = col
+        }), 500);
 
         function create() {
             for (var k = 1; k < 13; k++) {
                 for (var j = 1; j < 13; j++) {
                     var data = color[k * 100 + j];
                     data = data.replace(/\;/g, '');
-                    data = data.replace('url("./block/','"');
-                    data = data.replace('.png")','"');
-                    color[k * 100 + j]=data;
+                    data = data.replace('url("./block/', '"');
+                    data = data.replace('.png")', '"');
+                    color[k * 100 + j] = data;
                 }
             }
             for (var k = 1; k < 13; k++) {
                 for (var j = 1; j < 13; j++) {
                     var arrnum = k * 100 + j;
                     var type = color[arrnum];
-                    if(type!='"air"'){
+                    if (type != '"air"') {
                         document.write("blocks[" + arrnum + "]=" + type + ";");
                     }
                 }
@@ -527,7 +436,7 @@
                 for (var j = 1; j < 13; j++) {
                     var arrnum = k * 100 + j;
                     var type = color[arrnum];
-                    if(type!='"air"'){
+                    if (type != '"air"') {
                         document.write("layer1[" + arrnum + "]=" + type + ";");
                     }
                 }
@@ -537,7 +446,7 @@
                 for (var j = 1; j < 13; j++) {
                     var arrnum = k * 100 + j;
                     var type = color[arrnum];
-                    if(type!='"air"'){
+                    if (type != '"air"') {
                         document.write("layer2[" + arrnum + "]=" + type + ";");
                     }
                 }
